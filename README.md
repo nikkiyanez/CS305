@@ -1,1 +1,10 @@
 # CS305
+My client, Artemis Financial, is a financial services company that wanted to modernize its software to ensure the security of client and financial data. The company needed a way to verify that data transferred through its public web application remained safe and unchanged. To meet this requirement, I added a checksum verification feature using the SHA-256 algorithm and implemented HTTPS secure communication through a self-signed SSL certificate.
+
+When reviewing the software, I identified several outdated dependencies and potential vulnerabilities using the OWASP Dependency-Check tool. I resolved these by refactoring the code, updating dependencies, and suppressing false positives. I believe I did well in applying secure coding techniques and ensuring that all new code followed encryption and data protection best practices. Coding securely is important because it prevents data breaches and builds trust with clients, which adds long-term value and reliability to a company.
+
+The most challenging part of the vulnerability assessment was understanding which issues were actual risks and which were false positives. It was helpful to use OWASP tools because they provided detailed reports and helped prioritize critical updates. I increased layers of security by using SHA-256 hashing, SSL encryption, and dependency management. In the future, I would continue to use OWASP tools and automated vulnerability scanners to assess risk and choose mitigation methods.
+
+To make sure the application was functional and secure, I ran static tests, verified the HTTPS configuration, and checked for errors after refactoring. I confirmed no new vulnerabilities were introduced by re-running the dependency scan. Useful tools and practices included Maven for dependency management, Spring Boot for secure web development, and Java Keytool for certificate creation.
+
+For future employers, I could show this project as an example of my ability to develop secure web applications, perform vulnerability assessments, and implement encryption and checksum verification techniques following industry standards.
